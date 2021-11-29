@@ -1,0 +1,5 @@
+{
+  "root": true,
+  "extends": "@foxpage/foxpage-component",
+  "rules": {}
+}

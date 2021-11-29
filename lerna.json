@@ -1,0 +1,32 @@
+{
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "packages": [
+    "packages/*"
+  ],
+  "version": "independent",
+  "command": {
+    "publish": {
+      "ignoreChanges": [
+        "index.stories.tsx",
+        "package-lock.json"
+      ],
+      "message": "chore(release): publish",
+      "registry": "https://registry.npmjs.org"
+    },
+    "version": {
+      "push": false,
+      "conventionalCommits": true,
+      "changelog": false
+    }
+  },
+  "ignoreChanges": [
+    "**/lib/**",
+    "**/es/**",
+    "**/dist/**",
+    "**/test/**",
+    "**/stories/**",
+    "**/*.md",
+    "**/package-lock.json"
+  ]
+}
