@@ -25,6 +25,11 @@
     "url": "https://github.com/melodyJie"
   },
   "license": "MIT",
+  "homepage": "https://github.com/foxfamily/foxpage-component-react",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/foxfamily/foxpage-component-react"
+  },
   "workspaces": [
     "packages/*"
   ],

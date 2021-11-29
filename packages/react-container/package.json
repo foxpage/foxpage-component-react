@@ -14,6 +14,12 @@
   "publishConfig": {
     "access": "public"
   },
+  "homepage": "https://github.com/foxfamily/foxpage-component-react",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/foxfamily/foxpage-component-react",
+    "directory": "packages/react-container"
+  },
   "scripts": {
     "build": "npm run build:lib && npm run build:es && npm run build:foxpage",
     "build:foxpage": "foxpage-cmpt build --foxpage --modes=production,debug,node",
