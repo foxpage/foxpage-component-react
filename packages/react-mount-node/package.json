@@ -11,6 +11,7 @@
   "module": "es/index.js",
   "types": "lib/index.d.ts",
   "author": "drxiao",
+  "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
@@ -22,7 +23,7 @@
   },
   "scripts": {
     "build": "npm run build:lib && npm run build:es && npm run build:foxpage",
-    "build:foxpage": "foxpage-cmpt build --foxpage",
+    "build:foxpage": "foxpage-cmpt build --foxpage --manifest",
     "build:lib": "foxpage-cmpt build --lib",
     "build:es": "foxpage-cmpt build --es-module",
     "build:md": "foxpage-cmpt build --schema-md",

@@ -16,8 +16,7 @@
     },
     "version": {
       "push": false,
-      "conventionalCommits": true,
-      "changelog": false
+      "conventionalCommits": true
     }
   },
   "ignoreChanges": [

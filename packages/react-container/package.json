@@ -10,7 +10,12 @@
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "lib/index.d.ts",
-  "author": "melody-yangjie",
+  "author": {
+    "name": "melody-yangjie",
+    "email": "mryangjiekilitor@gmail.com",
+    "url": "https://github.com/melodyJie"
+  },
+  "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
@@ -22,7 +27,7 @@
   },
   "scripts": {
     "build": "npm run build:lib && npm run build:es && npm run build:foxpage",
-    "build:foxpage": "foxpage-cmpt build --foxpage --modes=production,debug,node",
+    "build:foxpage": "foxpage-cmpt build --foxpage --manifest --modes=production,debug,node",
     "build:lib": "foxpage-cmpt build --lib",
     "build:es": "foxpage-cmpt build --es-module",
     "build:md": "foxpage-cmpt build --schema-md",
