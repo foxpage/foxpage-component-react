@@ -1,31 +1,29 @@
 import React from 'react';
 import {
-  RenderContext,
+  Context,
   FoxpageStaticComponent,
   BrowserInitialState,
   StructureNode,
-  BrowserResource,
-  BrowserStructure,
   BrowserModule,
   FoxpageComponent,
 } from '@foxpage/foxpage-types';
 import { ComponentProps } from './typing';
 
 const ReactCSREntry: React.FC<ComponentProps> & FoxpageStaticComponent = props => {
-  const { data, entryLink, children } = props;
+  const { injection, entryLink, children } = props;
   const { url, async = true } = entryLink || ({} as ComponentProps['entryLink']);
 
   let innerStr = '';
-  if (typeof data === 'object') {
-    innerStr = JSON.stringify(data);
+  if (typeof injection === 'object') {
+    innerStr = JSON.stringify(injection);
   } else {
-    innerStr = data;
+    innerStr = injection || '';
   }
 
   return (
     <>
       <div id="foxpage-app">{children}</div>
-      {data && (
+      {injection && (
         <script
           id="__foxpage_data__"
           type="application/json"
@@ -43,33 +41,12 @@ const ReactCSREntry: React.FC<ComponentProps> & FoxpageStaticComponent = props =
  * @param node current node info
  * @returns formatted data
  */
-ReactCSREntry.beforeNodeBuild = (ctx: RenderContext, node: StructureNode) => {
+ReactCSREntry.beforeNodeBuild = (ctx: Context, node: StructureNode): Partial<ComponentProps> => {
   const initPage = () => ({
     appId: ctx.appId,
     slug: ctx.appSlug,
     pageId: ctx.page.id,
   });
-
-  const structures: BrowserStructure[] = [];
-  const initStructures = (list: StructureNode[] = []) => {
-    if (list.length > 0) {
-      list.forEach(item => {
-        let childrenIds: string[] = [];
-        if (item.children) {
-          initStructures(item.children);
-          childrenIds = item.children.map(child => child.id);
-        }
-        structures.push({
-          id: item.id,
-          name: item.name,
-          props: item.props,
-          version: item.version,
-          childrenIds,
-        });
-      });
-    }
-  };
-  initStructures(ctx.page.schemas);
 
   const generateKey = (name: string, version?: string) => `${name}@${version || ''}`;
 
@@ -96,22 +73,21 @@ ReactCSREntry.beforeNodeBuild = (ctx: RenderContext, node: StructureNode) => {
     return modules;
   };
 
-  const resource: BrowserResource = {
-    requirejsLink: ctx.frameworkResource?.requirejsLink || '',
-    libs: ctx.frameworkResource?.libs || {},
-  };
-
   const state: BrowserInitialState = {
     root: node.id,
     page: initPage(),
     modules: initModules(),
-    structures,
-    resource,
+    structures: Array.from(ctx.structureMap?.values() || []),
+    resource: {
+      requirejsLink:
+        (node.props as ComponentProps)?.resource?.requirejsLink || ctx.frameworkResource?.requirejsLink || '',
+      libs: { ...((node.props as ComponentProps)?.resource?.libs || {}), ...(ctx.frameworkResource?.libs || {}) },
+    },
     option: {
       renderMethod: ctx.options?.renderMethod || 'render',
     },
   };
-  return { data: state };
+  return { injection: state };
 };
 
 export default ReactCSREntry;

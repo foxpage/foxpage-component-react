@@ -14,8 +14,8 @@ const Editor: EditorFC<ComponentProps> = props => {
           <Input propKey="entryLink.url" placeholder="Please input the csr entry link" />
         </Field>
         <Field>
-          <Label>Data (JSON):</Label>
-          <JSONEditor propKey="data" />
+          <Label>Lib resource (JSON):</Label>
+          <JSONEditor propKey="resource" />
         </Field>
       </Group>
     </div>

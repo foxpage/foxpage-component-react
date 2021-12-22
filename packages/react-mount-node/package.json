@@ -1,7 +1,7 @@
 {
-  "name": "@fox-design/react-csr-entry",
-  "version": "0.2.10",
-  "description": "foxpage csr entry component",
+  "name": "@fox-design/react-mount-node",
+  "version": "0.1.0",
+  "description": "foxpage mount node component",
   "keywords": [
     "foxpage",
     "component",
@@ -18,7 +18,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/foxfamily/foxpage-component-react",
-    "directory": "packages/react-csr-entry"
+    "directory": "packages/react-mount-node"
   },
   "scripts": {
     "build": "npm run build:lib && npm run build:es && npm run build:foxpage",
@@ -45,8 +45,5 @@
     "*.js",
     "*.d.ts",
     "schema.md"
-  ],
-  "devDependencies": {
-    "@foxpage/foxpage-types": "^0.3.0"
-  }
+  ]
 }

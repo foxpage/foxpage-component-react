@@ -1,5 +1,9 @@
 export interface ComponentProps {
-  data: { [key: string]: any };
+  injection?: { [key: string]: any };
+  resource: {
+    requirejsLink: string;
+    libs: Record<string, any>;
+  };
   entryLink: {
     url: string;
     async?: boolean;
