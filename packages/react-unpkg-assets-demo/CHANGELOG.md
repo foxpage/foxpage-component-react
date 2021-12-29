@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.4](https://github.com/foxfamily/foxpage-component-react/compare/@fox-design/react-unpkg-assets-demo@0.1.3...@fox-design/react-unpkg-assets-demo@0.1.4) (2021-12-29)
+
+
+### Bug Fixes
+
+* 🐛 add version-after for update publicPath ([0cd877e](https://github.com/foxfamily/foxpage-component-react/commit/0cd877ee5565ebde3d940364be52b040cf24cf3c))
+
+
+
+
+
 ## [0.1.3](https://github.com/foxfamily/foxpage-component-react/compare/@fox-design/react-unpkg-assets-demo@0.1.2...@fox-design/react-unpkg-assets-demo@0.1.3) (2021-12-29)
 
 
