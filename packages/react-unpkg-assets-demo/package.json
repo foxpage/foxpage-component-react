@@ -18,7 +18,7 @@
   "license": "MIT",
   "foxpage": {
     "name": "@fox-design/react-unpkg-assets-demo",
-    "publicPath": "unpkg.com/@fox-design/react-unpkg-assets-demo@0.1.1/dist/",
+    "publicPath": "//unpkg.com/@fox-design/react-unpkg-assets-demo@0.1.1/dist/",
     "meta": {},
     "dependencies": [],
     "disableContainer": false
