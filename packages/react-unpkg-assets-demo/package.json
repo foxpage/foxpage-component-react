@@ -38,6 +38,7 @@
     "build:lib": "foxpage-cmpt build --lib",
     "build:es": "foxpage-cmpt build --es-module",
     "build:md": "foxpage-cmpt build --schema-md",
+    "version": "node ../../scripts/version-after.js 'publicPath://unpkg.com/@fox-design/react-unpkg-assets-demo@${version}/dist/'",
     "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
