@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.13](https://github.com/foxfamily/foxpage-component-react/compare/@fox-design/react-csr-entry@0.2.12...@fox-design/react-csr-entry@0.2.13) (2021-12-29)
+
+**Note:** Version bump only for package @fox-design/react-csr-entry
+
+
+
+
+
 ## [0.2.12](https://github.com/foxfamily/foxpage-component-react/compare/@fox-design/react-csr-entry@0.2.11...@fox-design/react-csr-entry@0.2.12) (2021-12-22)
 
 
