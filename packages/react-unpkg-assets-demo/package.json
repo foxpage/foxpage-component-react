@@ -1,6 +1,6 @@
 {
   "name": "@fox-design/react-unpkg-assets-demo",
-  "version": "0.1.4",
+  "version": "1.0.0",
   "description": "foxpage component",
   "keywords": [
     "foxpage",
@@ -18,7 +18,7 @@
   "license": "MIT",
   "foxpage": {
     "name": "@fox-design/react-unpkg-assets-demo",
-    "publicPath": "//unpkg.com/@fox-design/react-unpkg-assets-demo@0.1.4/dist/",
+    "publicPath": "//unpkg.com/@fox-design/react-unpkg-assets-demo@1.0.0/dist/",
     "meta": {},
     "dependencies": [],
     "disableContainer": false

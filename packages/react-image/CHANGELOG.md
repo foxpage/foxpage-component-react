@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0](https://github.com/foxpage/foxpage-component-react/compare/@fox-design/react-image@0.1.6...@fox-design/react-image@1.0.0) (2022-01-10)
+
+**Note:** Version bump only for package @fox-design/react-image
+
+
+
+
+
 ## [0.1.6](https://github.com/foxfamily/foxpage-component-react/compare/@fox-design/react-image@0.1.5...@fox-design/react-image@0.1.6) (2021-12-29)
 
 **Note:** Version bump only for package @fox-design/react-image

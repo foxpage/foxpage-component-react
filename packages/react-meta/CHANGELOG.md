@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0](https://github.com/foxpage/foxpage-component-react/compare/@fox-design/react-meta@0.1.5...@fox-design/react-meta@1.0.0) (2022-01-10)
+
+**Note:** Version bump only for package @fox-design/react-meta
+
+
+
+
+
 ## [0.1.5](https://github.com/foxfamily/foxpage-component-react/compare/@fox-design/react-meta@0.1.4...@fox-design/react-meta@0.1.5) (2021-12-29)
 
 **Note:** Version bump only for package @fox-design/react-meta
