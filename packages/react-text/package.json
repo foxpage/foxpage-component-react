@@ -19,10 +19,10 @@
   "publishConfig": {
     "access": "public"
   },
-  "homepage": "https://github.com/foxfamily/foxpage-component-react",
+  "homepage": "https://github.com/foxpage/foxpage-component-react",
   "repository": {
     "type": "git",
-    "url": "https://github.com/foxfamily/foxpage-component-react",
+    "url": "https://github.com/foxpage/foxpage-component-react",
     "directory": "packages/react-text"
   },
   "scripts": {
